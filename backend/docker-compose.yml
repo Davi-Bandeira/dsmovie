@@ -1,0 +1,15 @@
+version: '2'
+services:
+  postgres:
+    image: postgres:12.5
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "admin"
+    ports:
+      - "54320:5432"
+    volumes:
+      - ./docker/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - dsmovie_net
+networks:
+  dsmovie_net:
