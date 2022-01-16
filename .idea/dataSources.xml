@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:postgresql://localhost:54320/dsmovie</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="d3urcakbgs7sl@ec2-107-20-127-127.compute-1.amazonaws.com" uuid="ae0e453b-ff97-4a37-844c-95eea853e7de">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-107-20-127-127.compute-1.amazonaws.com:5432/d3urcakbgs7sl</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
