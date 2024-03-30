@@ -2,9 +2,9 @@ package com.devsuperior.dsmovie.services;
 
 import com.devsuperior.dsmovie.DTO.MovieDTO;
 import com.devsuperior.dsmovie.DTO.ScoreDTO;
-import com.devsuperior.dsmovie.entities.Movie;
-import com.devsuperior.dsmovie.entities.Score;
-import com.devsuperior.dsmovie.entities.User;
+import com.devsuperior.dsmovie.entity.Movie;
+import com.devsuperior.dsmovie.entity.Score;
+import com.devsuperior.dsmovie.entity.User;
 import com.devsuperior.dsmovie.repositories.MovieRepository;
 import com.devsuperior.dsmovie.repositories.ScoreRepository;
 import com.devsuperior.dsmovie.repositories.UserRepository;

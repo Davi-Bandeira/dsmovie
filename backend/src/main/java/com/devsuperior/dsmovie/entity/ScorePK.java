@@ -1,4 +1,4 @@
-package com.devsuperior.dsmovie.entities;
+package com.devsuperior.dsmovie.entity;
 
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
