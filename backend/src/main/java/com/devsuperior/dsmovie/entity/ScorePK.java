@@ -1,10 +1,17 @@
 package com.devsuperior.dsmovie.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Embeddable;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import java.io.Serializable;
 
+@Setter
+@Getter
+@NoArgsConstructor
 @Embeddable
 public class ScorePK implements Serializable {
 
@@ -17,23 +24,4 @@ public class ScorePK implements Serializable {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-
-    public ScorePK() {
-    }
-
-    public Movie getMovie() {
-        return movie;
-    }
-
-    public void setMovie(Movie movie) {
-        this.movie = movie;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 }

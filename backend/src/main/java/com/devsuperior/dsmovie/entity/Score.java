@@ -1,10 +1,17 @@
 package com.devsuperior.dsmovie.entity;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+@Setter
+@Getter
 @Entity
+@NoArgsConstructor
 @Table(name = "scores")
 public class Score {
 
@@ -12,30 +19,11 @@ public class Score {
     private ScorePK id = new ScorePK();
     private Double value;
 
-    public Score() {
-    }
-
     public void setMovie(Movie movie) {
         this.id.setMovie(movie);
     }
 
     public void setUser(User user) {
         this.id.setUser(user);
-    }
-
-    public ScorePK getId() {
-        return id;
-    }
-
-    public void setId(ScorePK id) {
-        this.id = id;
-    }
-
-    public Double getValue() {
-        return value;
-    }
-
-    public void setValue(Double value) {
-        this.value = value;
     }
 }
